@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { BookOpen } from "lucide-react"; // Importing the Book icon instead of the Eye icon
+import SmoothScroll from '../components/smooth-scroll'; // Adjust the path as needed
 
 const companies = [
   {
@@ -39,7 +40,8 @@ export default function ProjectsPage() {
   const top3 = companies[2]; // Johnson & Johnson
 
   return (
-    <div className="relative pb-16">
+    <SmoothScroll>
+    <div className="relative pb-16 bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
@@ -193,5 +195,6 @@ export default function ProjectsPage() {
         </div>
       </div>
     </div>
+    </SmoothScroll>
   );
 }

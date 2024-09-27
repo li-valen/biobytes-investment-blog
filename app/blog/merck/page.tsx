@@ -1,9 +1,12 @@
+'use client'
 import React from 'react';
 import { Navigation } from '../../components/nav'; // Import the Navigation component
+import SmoothScroll from '../../components/smooth-scroll'; // Adjust the path as needed
 
 const MerckPage = () => {
   return (
-    <div className="relative bg-transparent text-white">
+    <SmoothScroll>
+    <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 relative bg-transparent text-white">
       {/* Navigation Bar */}
       <Navigation />
 
@@ -156,6 +159,7 @@ const MerckPage = () => {
         like Keytruda, are the leading drugs in their fields. As well as this, it is unlikely that a consumer will switch prescribed drugs under regular 
         circumstances. 
         </p>
+        
         <h2 className="text-3xl font-semibold text-white mb-4">Revenue Drivers</h2>
         <p className="text-base leading-relaxed mb-6">
           In 2023, Merck grossed just over 60 billion dollars in revenue.
@@ -295,9 +299,10 @@ const MerckPage = () => {
           which was only 4.9% of their sales and an 84% decrease from the previous year. Over half ($1.5 billion) of this was 
           taxed due to acquisitions and partnerships.
         </p>
-        
+
       </div>
     </div>
+    </SmoothScroll>
   );
 };
 

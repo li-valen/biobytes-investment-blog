@@ -7,7 +7,7 @@ import { BookOpen } from "lucide-react"; // Importing the Book icon instead of t
 const companies = [
   {
     title: "Merck",
-    href: "/projects/merck",
+    href: "/blog/merck",
     summary: "A pharmaceutical company focusing on innovations in vaccines and therapies.",
     image: "/images/Merck_m_Letterpress.jpg",
     date: "2023-08-12",
@@ -15,7 +15,7 @@ const companies = [
   },
   {
     title: "Pfizer",
-    href: "/projects/pfizer",
+    href: "/blog/pfizer",
     summary: "Known for COVID-19 vaccine development, Pfizer leads in pharmaceuticals.",
     image: "/images/pfizer.png",
     date: "2023-09-05",
@@ -23,7 +23,7 @@ const companies = [
   },
   {
     title: "Johnson & Johnson",
-    href: "/projects/johnson",
+    href: "/blog/johnson",
     summary: "Focusing on consumer health, medical devices, and pharmaceuticals.",
     image: "/images/J&J.png",
     date: "2023-07-22",

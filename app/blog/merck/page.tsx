@@ -2,6 +2,7 @@
 import React from 'react';
 import { Navigation } from '../../components/nav'; // Import the Navigation component
 import SmoothScroll from '../../components/smooth-scroll'; // Adjust the path as needed
+import MerckAnalysis from '../merck/merck-charts';
 
 const MerckPage = () => {
   return (
@@ -299,6 +300,7 @@ const MerckPage = () => {
           which was only 4.9% of their sales and an 84% decrease from the previous year. Over half ($1.5 billion) of this was 
           taxed due to acquisitions and partnerships.
         </p>
+        <MerckAnalysis />
 
       </div>
     </div>

@@ -1,5 +1,3 @@
-// app/components/smooth-scroll.tsx
-
 'use client';
 
 import React, { useEffect, ReactNode } from 'react';
@@ -15,7 +13,7 @@ const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
     // Initialize Lenis
     const lenis = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, t * 5),
+      easing: (t) => Math.min(1, t * 4),
     });
 
     const scroll = (time: number) => {
